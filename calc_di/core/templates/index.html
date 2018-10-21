@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+{%block 'content'%}
+
+<form action="post">
+    
+    <h3>Quantidade númerica:</h3>
+    <input type="number" min="0" name="quantidade"/>
+    <h3>Lista de números, mantenha o padrão.</h3>
+    <input type="text" pattern="\d,{1,{{numberVezes}}}" title="formato: x,x,x,x,x,n..."/>
+</form>
+
+{%endblock%}
