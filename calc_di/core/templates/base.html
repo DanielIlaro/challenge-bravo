@@ -1,4 +1,5 @@
 <!DOCTYPE <!DOCTYPE html>
+{% load  static %}
 <html>
 
 <head>
@@ -6,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Calc_di</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/menus-horizontal.css' %}"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{%static  'css/colors.css'%}"/>
 </head>
 
 <body>
@@ -15,12 +18,12 @@
             <h1>SN - Simple Number</h1>
         </div>
 
-        <div id="menu_space">
-            <menu>
-                <li>Inicio</li>
-                <li>Calculadora</li>
-            </menu> 
-        </div>
+       
+        <menu class="pure-menu-horizontal">
+            <li class="pure-menu-item">Inicio</li>
+            <li class="pure-menu-item">Calculadora</li>
+        </menu> 
+        
     </header>
         <div id="content">
             {% block 'content' %} {% endblock %}
