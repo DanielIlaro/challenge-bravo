@@ -9,3 +9,14 @@ form{
     background-color: chocolate;
     color: white;
 }
+input{
+    color: black;
+}
+
+button{
+    color: black;
+}
+
+footer{
+    background-color: azure;
+}
