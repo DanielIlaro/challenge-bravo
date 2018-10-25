@@ -5,6 +5,8 @@
         <form action="" method="POST">
             {% csrf_token %}
             {% if number_numbers == none and list_numbers == none %}
+                <p>{{text_alert}}</p>
+                
                 {% for field in form %}
                     <h3>{{field.label}}</h3>
                     {{field}}
@@ -13,12 +15,12 @@
             {% endif %}
             
             {% if number_numbers != none and list_numbers != none %}
-                <h4>quantidade: {{number_numbers}}</h4>
                 <h4>Lista: {{list_numbers}}</h4>
                 <h4>Maior Número: {{bigger_number}}</h4>
                 <h4>Menor Número: {{smaller_number}}</h4>
                 <button>Voltar</button>
             {% endif %}
+
         </form>
     </div>
 {%endblock%}

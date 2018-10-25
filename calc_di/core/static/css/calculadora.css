@@ -1,0 +1,34 @@
+#calculadora{
+    background-color: coral;
+    width: 220px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+#calculadora input {
+    width: 90%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 30px;
+}
+
+#calculadora table {
+    width: 90%;
+    margin: auto;
+}
+
+#calculadora tr{
+    text-align: center;
+}
+
+#calculadora td{
+    border: 2px solid blanchedalmond;
+    height: 50px;
+}
+
+#calculadora td button {
+    width: 100%;
+    height: 100%;
+}

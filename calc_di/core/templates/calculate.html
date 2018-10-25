@@ -1,19 +1,42 @@
 {%extends 'base.html'%}
-
+{% load static %}
 {%block 'content'%}
+<link rel="stylesheet" type="text/css" media="screen" href="{% static  'css/calculadora.css'%}"/>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="{% static 'js/calculator.js'%}"></script>
     <div id="calculadora">
-        <input id="tela" type="text">
+        <div>
+            {{form.screenCalc}}
+        </div>
         
         <table>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
+            <tr>
+                <td><button id="clean">C</button></td>
+                <td><button disabled>.</button></td>
+                <td><button id="/">/</button></td>
+                <td><button id="*">*</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="1">1</button></td>
+                <td><button id="2">2</button></td>
+                <td><button id="3">3</button></td>
+                <td><button id="-">-</button></td>
+            </tr>
+            
+            <tr>
+                <td><button id="4">4</button></td>
+                <td><button id="5">5</button></td>
+                <td><button id="6">6</button></td>
+                <td><button id="+">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="7">7</button></td>
+                <td><button id="8">8</button></td>
+                <td><button id="9">9</button></td>
+                <td><button id="=">=</button></td>
+            </tr>
         </table>
     </div>
 {% endblock %}
