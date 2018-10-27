@@ -8,6 +8,7 @@ Além de ter uma Calculadora que faz todos os tipos de opeações simples.
 ### O que foi usado
 Foi desenvolvido com:
   - Django 
+  - Pure.css
   - CSS 
   - JQuery
 
