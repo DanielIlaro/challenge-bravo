@@ -1,3 +1,7 @@
+/*
+*Author: Daniel Ilaro da Silva
+*/
+
 var listOperation = ['/', '*', '-', '+'];
 var calc = 0;
 var locationOperationG = -1;
